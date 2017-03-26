@@ -1,0 +1,73 @@
+﻿<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Hasan Gündüz">
+		<title>Registration</title>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">&#91;Main&#93;</a>
+          		<a href="photogallery.html">&#91;Photo Gallery&#93;</a>
+			<a href="registration.html">&#91;Registration&#93;</a>
+         		<a href = "myhobbies.html">&#91;My Hobbies&#93;</a>
+          		<a href = "family.html">&#91;About My Family&#93;</a>
+          		<a href = "hometown.html">&#91;My Hometown&#93;</a>
+         		<a href="contactme.html">&#91;Contact Me&#93;</a>
+		</nav>
+<br><br>
+		<form>		
+		 <label for="email">Your E-mail:</label>
+           	 <input type="email" id="email" name="email"><hr>
+       		 <label for="password">Please Enter Your Password: </label>
+		 <input type="text" id="password"><hr> 
+		 <label for="birthday">Your birthday:</label>
+           	 <input type="date" id="birthday" name="birthday"><hr>	 
+            <label for="city">City:</label>
+            <form action="/action_page.php">
+		  	<input list="sehir">
+		  	<datalist id="sehir">
+		    	<option value="Ankara">
+		    	<option value="İstanbul">
+		    	<option value="İzmir">
+		    	<option value="Eskişehir">
+		  	</datalist>
+		</form> <hr>
+		<label for="name">Name and Surname </label>
+			<input type="text" id="name"><hr>
+			
+			<label for="opinion">Please give your opinions on here<br></label>
+			<textarea id="opinion" row="5" cols="75" placeholder="You can enter your opinions here"></textarea>
+		</form><br>
+  
+    		<form method="post" enctype="multipart/form­data" action="test.php">
+			  
+			<p>Select the file</p> <input type="file" name="fileToUpload">
+			    <p>Press this button for upluod</p> <input type="submit" value="Upload the file">
+		</form>
+    		<form action="">
+   <label for="gender">Gender</label><br> 			
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  
+
+</form>
+<form action="">
+<label for="checkbox">İnterest</label><br>
+<input type="checkbox" name="vehicle" value="Bike">Woman
+<input type="checkbox" name="vehicle" value="Car">Cars
+<input type="checkbox" name="vehicle" value="MindGames">Mind games
+</form>
+
+<form action="" method="get" id="form1">
+  
+</form>
+
+<button type="submit" form="form1" value="Submit" onclick="myFunction()">Submit</button>
+<script>
+function myFunction() {
+    alert("Thank you!");
+}
+</script>
+	</body>
+</html>
